@@ -1,4 +1,4 @@
-# Artbine
+# Jobine
 
 Getting Started with RESTful Web Services \
 https://netbeans.org/kb/docs/websvc/rest.html
