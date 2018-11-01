@@ -6,6 +6,7 @@
 package entities;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,6 +17,8 @@ import javax.persistence.Lob;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -29,6 +32,26 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "User.findAll", query = "SELECT u FROM User u")
     , @NamedQuery(name = "User.findByIdUser", query = "SELECT u FROM User u WHERE u.idUser = :idUser")})
 public class User implements Serializable {
+
+    @Basic(optional = false)
+    @Column(name = "dateUser")
+    @Temporal(TemporalType.DATE)
+    private Date dateUser;
+    @Basic(optional = false)
+    @Lob
+    @Column(name = "jobUser")
+    private String jobUser;
+    @Basic(optional = false)
+    @Lob
+    @Column(name = "descriptionUser")
+    private String descriptionUser;
+    @Basic(optional = false)
+    @Lob
+    @Column(name = "imgUser")
+    private String imgUser;
+    @Basic(optional = false)
+    @Column(name = "idUserType")
+    private int idUserType;
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -118,6 +141,46 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "entities.User[ idUser=" + idUser + " ]";
+    }
+
+    public Date getDateUser() {
+        return dateUser;
+    }
+
+    public void setDateUser(Date dateUser) {
+        this.dateUser = dateUser;
+    }
+
+    public String getJobUser() {
+        return jobUser;
+    }
+
+    public void setJobUser(String jobUser) {
+        this.jobUser = jobUser;
+    }
+
+    public String getDescriptionUser() {
+        return descriptionUser;
+    }
+
+    public void setDescriptionUser(String descriptionUser) {
+        this.descriptionUser = descriptionUser;
+    }
+
+    public String getImgUser() {
+        return imgUser;
+    }
+
+    public void setImgUser(String imgUser) {
+        this.imgUser = imgUser;
+    }
+
+    public int getIdUserType() {
+        return idUserType;
+    }
+
+    public void setIdUserType(int idUserType) {
+        this.idUserType = idUserType;
     }
     
 }

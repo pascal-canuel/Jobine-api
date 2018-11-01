@@ -22,7 +22,7 @@ import javax.ws.rs.core.MediaType;
 
 /**
  *
- * @author Pascal
+ * @author admin
  */
 @Stateless
 @Path("entities.user")
