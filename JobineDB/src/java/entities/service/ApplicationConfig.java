@@ -29,6 +29,7 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(entities.jobineCrossOrigin.class);
         resources.add(entities.service.MsgFacadeREST.class);
         resources.add(entities.service.OfferFacadeREST.class);
         resources.add(entities.service.UserFacadeREST.class);
