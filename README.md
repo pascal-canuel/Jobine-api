@@ -13,12 +13,12 @@
 
 |method|url|
 |------|---|
-|**GET**|http://70.48.63.175:8080/JobineDB/webresources/entities.{tableName}/{id}|
-|**GET**|http://70.48.63.175:8080/JobineDB/webresources/entities.{tableName}|
-|**POST**|http://70.48.63.175:8080/JobineDB/webresources/entities.{tableName} |
-|**PUT**|http://70.48.63.175:8080/JobineDB/webresources/entities.{tableName}/{id}|
-|**DELETE**|http://70.48.63.175:8080/JobineDB/webresources/entities.{tableName}/{id}|
-|**count**|http://70.48.63.175:8080/JobineDB/webresources/entities.{tableName}/count|
+|**GET**|http://70.48.63.175:8080/Jobine/webresources/entities.{tableName}/{id}|
+|**GET**|http://70.48.63.175:8080/Jobine/webresources/entities.{tableName}|
+|**POST**|http://70.48.63.175:8080/Jobine/webresources/entities.{tableName} |
+|**PUT**|http://70.48.63.175:8080/Jobine/webresources/entities.{tableName}/{id}|
+|**DELETE**|http://70.48.63.175:8080/Jobine/webresources/entities.{tableName}/{id}|
+|**count**|http://70.48.63.175:8080/Jobine/webresources/entities.{tableName}/count|
 
 # Links
 Getting Started with RESTful Web Services \
